@@ -6,13 +6,13 @@ pygame.init()
 #-Settings---------------------------------------------------------------
 class Settings(object):
     # Window
-    title                           = "Game Project"
-    width, height, bordersize, fps  = 1000, 700, 5, 60
+    title                           = "Game1.3"                         # Window title
+    width, height, bordersize, fps  = 1000, 700, 5, 60                  # Window + FPS
     # Filepath
     file_path   = os.path.dirname(os.path.abspath(__file__))
     images_path = os.path.join(file_path, "Pictures")
     # Game options
-    score, paused = 0, False
+    score, paused = 0, False                                            # Game options
 
     @staticmethod
     def get_dim():
