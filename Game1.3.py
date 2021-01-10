@@ -149,8 +149,8 @@ class Game(object):
                             elif event.key == pygame.K_DOWN:
                                 self.car.direction_y += self.speed
                             elif event.key == pygame.K_SPACE:
-                                self.car.rect.left = random.randint(Settings.bordersize, 1000 - Settings.bordersize - self.car.rect.right)
-                                self.car.rect.bottom = random.randint(Settings.bordersize, 700 - Settings.bordersize - self.car.rect.top)
+                                self.car.rect.left = random.randint(Settings.bordersize, Settings.width - Settings.bordersize - self.car.rect.right)
+                                self.car.rect.bottom = random.randint(Settings.bordersize, Settings.height - Settings.bordersize - self.car.rect.top)
                     elif event.type == pygame.KEYUP:
                         if event.key == pygame.K_LEFT:
                             self.car.direction = 0
